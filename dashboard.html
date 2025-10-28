@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - NotesApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>NotesApp Dashboard</h1>
+        <a href="login.html" class="logout-btn">Logout</a>
+    </header>
+    
+    <div class="dashboard-layout">
+        <aside class="create-note-section">
+            <h2>Create New Note</h2>
+            <form class="note-form">
+                <input type="text" placeholder="Note Title" required>
+                <textarea placeholder="Type your note content here..." rows="8" required></textarea>
+                <button type="submit" class="primary-btn">Save Note</button>
+            </form>
+        </aside>
+    
+        <main class="notes-list-section">
+            <h2>Your Notes</h2>
+            <div class="note-card">
+                <h3>Meeting Agenda</h3>
+                <p>Discuss Q4 strategy, budget review, and team growth plans.</p>
+                <small>Created: 2 hours ago</small>
+            </div>
+            <div class="note-card">
+                <h3>Grocery List</h3>
+                <p>Milk, eggs, bread, cheese, tomatoes, and coffee beans.</p>
+                <small>Created: Yesterday</small>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

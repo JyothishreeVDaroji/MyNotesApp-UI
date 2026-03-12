@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Settings - NotesApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>NotesApp</h1>
+        <nav class="navbar-links">
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+            <a href="login.html" class="logout-btn">Logout</a>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <h2>Profile Settings</h2>
+
+        <section class="profile-section">
+            <h3>Account Information</h3>
+            <form class="profile-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Your username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+                <button type="submit" class="primary-btn">Save Changes</button>
+            </form>
+        </section>
+
+        <section class="profile-section">
+            <h3>Change Password</h3>
+            <form class="profile-form">
+                <label for="current-password">Current Password:</label>
+                <input type="password" id="current-password" name="current-password" required>
+
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password" required>
+
+                <label for="confirm-password">Confirm New Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit" class="primary-btn">Update Password</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
